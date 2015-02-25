@@ -14,6 +14,10 @@ describe('shopping app', function() {
     expect(productList.get(2).isPresent()).toBe(true);
   });
 
+  it('has the shop name linking back to the homepage', function() {
+    expect(element(by.className('add-to-basket')).isPresent()).toBe(true);
+  });
+
   it('should have an Add to Basket button available for each product', function() {
     expect(element(by.className('add-to-basket')).isPresent()).toBe(true);
   });

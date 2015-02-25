@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://localhost:8000/app/# -->
+<html lang="en" ng-app="shoppingApp" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths ng-scope"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+  <title>Angular Shop</title>
+
+  <link rel="stylesheet" href="http://localhost:8000/app/bower_components/html5-boilerplate/css/normalize.css">
+  <link rel="stylesheet" href="http://localhost:8000/app/bower_components/html5-boilerplate/css/main.css">
+  <link rel="stylesheet" href="http://localhost:8000/app/bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="http://localhost:8000/app/css/app.css">
+
+  <script src="./Angular Shop_files/jquery.js"></script>
+  <script src="./Angular Shop_files/bootstrap.min.js"></script>
+  <script src="./Angular Shop_files/modernizr-2.6.2.min.js"></script>
+</head>
+<body ng-controller="ProductListCtrl" class="ng-scope">
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="./Angular Shop_files/Angular Shop.html" style="
+    color: white;
+">Angular Shop</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="./Angular Shop_files/Angular Shop.html">Link <span class="sr-only">(current)</span></a></li>
+          <li><a href="./Angular Shop_files/Angular Shop.html">Link</a></li>
+          <li class="dropdown">
+            <a href="./Angular Shop_files/Angular Shop.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="./Angular Shop_files/Angular Shop.html">Action</a></li>
+              <li><a href="./Angular Shop_files/Angular Shop.html">Another action</a></li>
+              <li><a href="./Angular Shop_files/Angular Shop.html">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="./Angular Shop_files/Angular Shop.html">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="./Angular Shop_files/Angular Shop.html">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left ng-pristine ng-valid" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./Angular Shop_files/Angular Shop.html">Link</a></li>
+          <li class="dropdown">
+            <a href="./Angular Shop_files/Angular Shop.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="./Angular Shop_files/Angular Shop.html">Action</a></li>
+              <li><a href="./Angular Shop_files/Angular Shop.html">Another action</a></li>
+              <li><a href="./Angular Shop_files/Angular Shop.html">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="./Angular Shop_files/Angular Shop.html">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="row">
+    <!-- ngRepeat: product in products --><div class="col-sm-6 col-md-4 products ng-scope" ng-repeat="product in products">
+      <div class="thumbnail">
+        <img src="./Angular Shop_files/womens_footwear.jpg" alt="women&#39;s footwear">
+        <div class="caption">
+          <h3 class="ng-binding">Almond Toe Court Shoes</h3>
+          <p class="ng-binding">Patent Black</p>
+          <p><strong class="ng-binding">£ 99</strong></p>
+          <p><a href="http://localhost:8000/basket" class="btn btn-primary add-to-basket" role="button">Add to Basket</a>
+        </p></div>
+      </div>
+    </div><!-- end ngRepeat: product in products --><div class="col-sm-6 col-md-4 products ng-scope" ng-repeat="product in products">
+      <div class="thumbnail">
+        <img src="./Angular Shop_files/womens_footwear.jpg" alt="women&#39;s footwear">
+        <div class="caption">
+          <h3 class="ng-binding">Suede Shoes</h3>
+          <p class="ng-binding">Blue</p>
+          <p><strong class="ng-binding">£ 42</strong></p>
+          <p><a href="http://localhost:8000/basket" class="btn btn-primary add-to-basket" role="button">Add to Basket</a>
+        </p></div>
+      </div>
+    </div><!-- end ngRepeat: product in products --><div class="col-sm-6 col-md-4 products ng-scope" ng-repeat="product in products">
+      <div class="thumbnail">
+        <img src="./Angular Shop_files/womens_footwear.jpg" alt="women&#39;s footwear">
+        <div class="caption">
+          <h3 class="ng-binding">Leather Driver Saddle Loafers</h3>
+          <p class="ng-binding">Tan</p>
+          <p><strong class="ng-binding">£ 34</strong></p>
+          <p><a href="http://localhost:8000/basket" class="btn btn-primary add-to-basket" role="button">Add to Basket</a>
+        </p></div>
+      </div>
+    </div><!-- end ngRepeat: product in products --><div class="col-sm-6 col-md-4 products ng-scope" ng-repeat="product in products">
+      <div class="thumbnail">
+        <img src="./Angular Shop_files/womens_footwear.jpg" alt="women&#39;s footwear">
+        <div class="caption">
+          <h3 class="ng-binding">Flip Flops</h3>
+          <p class="ng-binding">Red</p>
+          <p><strong class="ng-binding">£ 19</strong></p>
+          <p><a href="http://localhost:8000/basket" class="btn btn-primary add-to-basket" role="button">Add to Basket</a>
+        </p></div>
+      </div>
+    </div><!-- end ngRepeat: product in products --><div class="col-sm-6 col-md-4 products ng-scope" ng-repeat="product in products">
+      <div class="thumbnail">
+        <img src="./Angular Shop_files/womens_footwear.jpg" alt="women&#39;s footwear">
+        <div class="caption">
+          <h3 class="ng-binding">Flip Flops</h3>
+          <p class="ng-binding">Blue</p>
+          <p><strong class="ng-binding">£ 19</strong></p>
+          <p><a href="http://localhost:8000/basket" class="btn btn-primary add-to-basket" role="button">Add to Basket</a>
+        </p></div>
+      </div>
+    </div><!-- end ngRepeat: product in products --><div class="col-sm-6 col-md-4 products ng-scope" ng-repeat="product in products">
+      <div class="thumbnail">
+        <img src="./Angular Shop_files/womens_footwear.jpg" alt="women&#39;s footwear">
+        <div class="caption">
+          <h3 class="ng-binding">Gold Button Cardigan</h3>
+          <p class="ng-binding">Black</p>
+          <p><strong class="ng-binding">£ 167</strong></p>
+          <p><a href="http://localhost:8000/basket" class="btn btn-primary add-to-basket" role="button">Add to Basket</a>
+        </p></div>
+      </div>
+    </div><!-- end ngRepeat: product in products --><div class="col-sm-6 col-md-4 products ng-scope" ng-repeat="product in products">
+      <div class="thumbnail">
+        <img src="./Angular Shop_files/womens_footwear.jpg" alt="women&#39;s footwear">
+        <div class="caption">
+          <h3 class="ng-binding">Cotton Shorts</h3>
+          <p class="ng-binding">Medium Red</p>
+          <p><strong class="ng-binding">£ 30</strong></p>
+          <p><a href="http://localhost:8000/basket" class="btn btn-primary add-to-basket" role="button">Add to Basket</a>
+        </p></div>
+      </div>
+    </div><!-- end ngRepeat: product in products --><div class="col-sm-6 col-md-4 products ng-scope" ng-repeat="product in products">
+      <div class="thumbnail">
+        <img src="./Angular Shop_files/womens_footwear.jpg" alt="women&#39;s footwear">
+        <div class="caption">
+          <h3 class="ng-binding">Fine Stripe Short Sleeve Shirt</h3>
+          <p class="ng-binding">Grey</p>
+          <p><strong class="ng-binding">£ 49.99</strong></p>
+          <p><a href="http://localhost:8000/basket" class="btn btn-primary add-to-basket" role="button">Add to Basket</a>
+        </p></div>
+      </div>
+    </div><!-- end ngRepeat: product in products --><div class="col-sm-6 col-md-4 products ng-scope" ng-repeat="product in products">
+      <div class="thumbnail">
+        <img src="./Angular Shop_files/womens_footwear.jpg" alt="women&#39;s footwear">
+        <div class="caption">
+          <h3 class="ng-binding">Fine Stripe Short Sleeve Shirt</h3>
+          <p class="ng-binding">Green</p>
+          <p><strong class="ng-binding">£ 49.99</strong></p>
+          <p><a href="http://localhost:8000/basket" class="btn btn-primary add-to-basket" role="button">Add to Basket</a>
+        </p></div>
+      </div>
+    </div><!-- end ngRepeat: product in products --><div class="col-sm-6 col-md-4 products ng-scope" ng-repeat="product in products">
+      <div class="thumbnail">
+        <img src="./Angular Shop_files/womens_footwear.jpg" alt="women&#39;s footwear">
+        <div class="caption">
+          <h3 class="ng-binding">Sharkskin Waistcoat</h3>
+          <p class="ng-binding">Charcoal</p>
+          <p><strong class="ng-binding">£ 75</strong></p>
+          <p><a href="http://localhost:8000/basket" class="btn btn-primary add-to-basket" role="button">Add to Basket</a>
+        </p></div>
+      </div>
+    </div><!-- end ngRepeat: product in products --><div class="col-sm-6 col-md-4 products ng-scope" ng-repeat="product in products">
+      <div class="thumbnail">
+        <img src="./Angular Shop_files/womens_footwear.jpg" alt="women&#39;s footwear">
+        <div class="caption">
+          <h3 class="ng-binding">Lightweight Patch Pocket Blazer</h3>
+          <p class="ng-binding">Deer</p>
+          <p><strong class="ng-binding">£ 175.5</strong></p>
+          <p><a href="http://localhost:8000/basket" class="btn btn-primary add-to-basket" role="button">Add to Basket</a>
+        </p></div>
+      </div>
+    </div><!-- end ngRepeat: product in products --><div class="col-sm-6 col-md-4 products ng-scope" ng-repeat="product in products">
+      <div class="thumbnail">
+        <img src="./Angular Shop_files/womens_footwear.jpg" alt="women&#39;s footwear">
+        <div class="caption">
+          <h3 class="ng-binding">Bird Print Dress</h3>
+          <p class="ng-binding">Black</p>
+          <p><strong class="ng-binding">£ 270</strong></p>
+          <p><a href="http://localhost:8000/basket" class="btn btn-primary add-to-basket" role="button">Add to Basket</a>
+        </p></div>
+      </div>
+    </div><!-- end ngRepeat: product in products --><div class="col-sm-6 col-md-4 products ng-scope" ng-repeat="product in products">
+      <div class="thumbnail">
+        <img src="./Angular Shop_files/womens_footwear.jpg" alt="women&#39;s footwear">
+        <div class="caption">
+          <h3 class="ng-binding">Mid Twist Cut-Out Dress</h3>
+          <p class="ng-binding">Pink</p>
+          <p><strong class="ng-binding">£ 540</strong></p>
+          <p><a href="http://localhost:8000/basket" class="btn btn-primary add-to-basket" role="button">Add to Basket</a>
+        </p></div>
+      </div>
+    </div><!-- end ngRepeat: product in products -->
+  </div>
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="./Angular Shop_files/angular.js"></script>
+  <script src="./Angular Shop_files/angular-route.js"></script>
+  <script src="./Angular Shop_files/controllers.js"></script>
+  <script src="./Angular Shop_files/app.js"></script>
+  <script src="./Angular Shop_files/version.js"></script>
+  <script src="./Angular Shop_files/version-directive.js"></script>
+  <script src="./Angular Shop_files/interpolate-filter.js"></script>
+
+
+</body></html>

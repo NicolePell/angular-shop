@@ -1,30 +1,25 @@
 /* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+/*=================NAVBAR=================*/
+.navbar {
+  background-color: #AB0008;
 }
 
-.menu:before {
-  content: "[";
+.navbar-default .navbar-brand {
+  color: white;
 }
 
-.menu:after {
-  content: "]";
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav >
+.active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: black;
+  color: white;
 }
 
-.menu > li {
-  display: inline;
+.navbar-default .navbar-nav > li > a {
+  color: white;
 }
 
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
+.btn-default {
+  color: white;
+  background-color: black;
+  border-color: gray;
 }
