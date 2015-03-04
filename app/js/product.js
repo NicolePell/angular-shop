@@ -1,16 +1,9 @@
-// product class
 function product(id, name, description, category,
   price, quantity) {
-    this.sku = sku; // product code (SKU = stock keeping unit)
+    this.id = id;
     this.name = name;
     this.description = description;
+    this.category = category;
     this.price = price;
-    this.cal = cal;
-    this.nutrients = {
-      "Carotenoid": carot,
-      "Vitamin C": vitc,
-      "Folates": folate,
-      "Potassium": potassium,
-      "Fiber": fiber
-    };
-  }
+    this.quantity = quantity;
+  };

@@ -2,8 +2,8 @@
 
 var shoppingControllers = angular.module('shoppingControllers', []);
 
-$scope.shop = DataService.shop;
-$scope.basket = DataService.basket;
+// $scope.shop = DataService.shop;
+// $scope.basket = DataService.basket;
 
 shoppingControllers.controller('ProductListCtrl', ['$scope', '$http',
 function($scope, $http) {
