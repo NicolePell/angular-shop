@@ -1,12 +1,22 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
+var shoppingApp = angular.module('shoppingApp', [
   'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
-]).
-config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  'shoppingControllers',
+]);
+
+shoppingApp.config(['$routeProvider', function($routeProvider) {
+  $routeProvider.
+  when('/', {
+    templateUrl: 'partials/shop.html',
+    controller: 'ProductListCtrl'
+  }).
+  when('/basket/:productId', {
+    templateUrl: 'partials/basket.html',
+    controller: 'BasketCtrl'
+  }).
+  otherwise({
+    redirectTo: '/'
+  });
 }]);

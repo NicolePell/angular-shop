@@ -20,7 +20,7 @@
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
-<body ng-controller="ProductListCtrl">
+<body>
 
   <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -32,7 +32,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Angular Shop</a>
+        <a id="brand" class="navbar-brand" href="#">Angular Shop</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,7 +53,7 @@
         </ul>
         <form class="navbar-form navbar-right" role="search">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
+            <input type="search" class="form-control" placeholder="Search" ng-model="search">
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
@@ -61,19 +61,7 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-  <div class="row">
-    <div class="col-sm-6 col-md-4 products" ng-repeat="product in products">
-      <div class="thumbnail">
-        <img src="images/womens_footwear.jpg" alt="women's footwear">
-        <div class="caption">
-          <h3>{{product.name}}</h3>
-          <p>{{product.description}}</p>
-          <p><strong>£ {{product.price}}</strong></p>
-          <p><a href="/basket" class="btn btn-primary add-to-basket" role="button">Add to Basket</a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div ng-view></div>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->

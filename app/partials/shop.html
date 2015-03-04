@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-sm-6 col-md-4 products" ng-repeat="product in products | filter:search">
+    <div class="thumbnail">
+      <img src="{{product.imageUrl}}">
+      <div class="caption">
+        <h3>{{product.name}}</h3>
+        <p>{{product.description}}</p>
+        <p><strong>£ {{product.price}}</strong></p>
+        <p><a href="#/basket/{{product.id}}" class="btn btn-primary add-to-basket" role="button" ng-click="update($index)">Add to Basket</a>
+        </div>
+      </div>
+    </div>
+  </div>
