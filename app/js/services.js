@@ -1,12 +1,19 @@
 'use strict';
 
 /* Services */
+angular.module('shoppingApp.services', ['ngCookies']).
+  factory('simpleCart', ['$cookieStore', function(cookies) {
+    var cart = {
 
-shoppingApp.factory("DataService", function() {
-  var myShop = new shop();
-  var myBasket = new shoppingBasket("My Angular Shop");
-  return {
-    shop: myShop,
-    basket: myBasket
-  };
+      itemsCookies = '',
+
+      init: function(itemsCookie) {
+        this.itemsCookies = itemsCookie;
+      },
+
+      addItem: function(item, quantity) {
+        
+      }
+    }
+  }])
 });
