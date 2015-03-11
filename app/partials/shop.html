@@ -1,5 +1,9 @@
 <div class="row">
   <div class="col-sm-8 products">
+    <div class="alert alert-danger" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>{{stockMessage}}</strong>
+    </div>
     <div class="col-sm-6 col-md-4 products" ng-repeat="product in products | filter:search">
       <div class="thumbnail">
         <img class="product-image" src="{{product.imageUrl}}">
@@ -9,7 +13,6 @@
           <p><strong>{{product.price | currency:'£'}}</strong></p>
           <p>{{product.category}}</p>
           <p>Stock left: {{product.quantity}}</p>
-          <p>{{stockMessage}}</p>
           <p><a href ng-click="addItem($index)" class="btn btn-danger add-to-basket" role="button">Add to Basket</a>
         </div>
       </div>
