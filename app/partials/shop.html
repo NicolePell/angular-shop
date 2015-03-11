@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-sm-8">
-    <div class="col-sm-6 col-md-4 products" ng-repeat="product in products | filter:search | orderBy: 'category'">
+    <div class="col-sm-6 col-md-4 products" ng-repeat="product in products | filter:search">
       <div class="thumbnail">
         <img src="{{product.imageUrl}}">
         <div class="caption">
@@ -15,13 +15,13 @@
   <div class="col-sm-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">Your Basket</h3>
+        <h3 class="panel-title">Your Basket Total: {{ getTotal() | currency:'£' }}</h3>
       </div>
       <div class="panel-body" ng-repeat="item in basket track by $index">
-        {{item.name}} : {{item.price | currency:'£'}}
+        <table class="table">
+          <tr>{{item.name}} : {{item.price | currency:'£'}}</tr>
+        <table>
       </div>
     </div>
   </div>
 </div>
-
-<!-- cloth in sharedCart track by $index -->

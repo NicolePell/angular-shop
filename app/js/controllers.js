@@ -15,4 +15,12 @@ function($scope, $http) {
 
         $scope.basket.push($scope.products[index]);
     };
+
+    $scope.getTotal = function() {
+      var total = 0;
+      angular.forEach($scope.basket, function(item) {
+        total += item.price;
+      });
+      return total;
+    };
 }]);

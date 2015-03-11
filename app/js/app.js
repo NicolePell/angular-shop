@@ -11,8 +11,5 @@ shoppingApp.config(['$routeProvider', function($routeProvider) {
   when('/', {
     templateUrl: 'partials/shop.html',
     controller: 'ShopCtrl'
-  }).
-  otherwise({
-    redirectTo: '/'
   });
 }]);
