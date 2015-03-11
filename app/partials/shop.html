@@ -4,7 +4,7 @@
       <div class="thumbnail">
         <img src="{{product.imageUrl}}">
         <div class="caption">
-          <h3>{{product.name}}</h3>
+          <h4>{{product.name}}</h4>
           <p>{{product.description}}</p>
           <p><strong>{{product.price | currency:'£'}}</strong></p>
           <p><a href class="btn btn-primary add-to-basket" role="button">Add to Basket</a>
@@ -13,4 +13,13 @@
     </div>
   </div>
   <div class="col-sm-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Your Basket</h3>
+      </div>
+      <div class="panel-body">
+        <table class="table"></table>
+      </div>
+    </div>
+  </div>
 </div>

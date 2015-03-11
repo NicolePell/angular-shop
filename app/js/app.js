@@ -10,11 +10,7 @@ shoppingApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
   when('/', {
     templateUrl: 'partials/shop.html',
-    controller: 'ProductListCtrl'
-  }).
-  when('/basket/:productId', {
-    templateUrl: 'partials/basket.html',
-    controller: 'BasketCtrl'
+    controller: 'ShopCtrl'
   }).
   otherwise({
     redirectTo: '/'
