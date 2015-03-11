@@ -12,8 +12,7 @@ function($scope, $http) {
     $scope.basket = [];
 
     $scope.addItem = function(index) {
-
-        $scope.basket.push($scope.products[index]);
+      $scope.basket.push($scope.products[index]);
     };
 
     $scope.getTotal = function() {
