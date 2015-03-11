@@ -44,4 +44,9 @@ describe('shopping app', function() {
     expect(basketList.count()).toEqual(0);
   });
 
+  it('as a user I can apply a voucher to my basket', function() {
+    addButton.click();
+    
+  });
+
 });
