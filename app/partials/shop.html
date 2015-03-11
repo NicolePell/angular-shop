@@ -2,11 +2,14 @@
   <div class="col-sm-8 products">
     <div class="col-sm-6 col-md-4 products" ng-repeat="product in products | filter:search">
       <div class="thumbnail">
-        <img src="{{product.imageUrl}}">
+        <img class="product-image" src="{{product.imageUrl}}">
         <div class="caption">
           <h4>{{product.name}}</h4>
           <p>{{product.description}}</p>
           <p><strong>{{product.price | currency:'£'}}</strong></p>
+          <p>{{product.category}}</p>
+          <p>Stock left: {{product.quantity}}</p>
+          <p>{{stockMessage}}</p>
           <p><a href ng-click="addItem($index)" class="btn btn-danger add-to-basket" role="button">Add to Basket</a>
         </div>
       </div>
@@ -15,7 +18,7 @@
   <div class="col-sm-4 basket">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title total">Your Basket | Total: {{ getTotal() | currency:'£' }}</h3>
+        <h3 class="panel-title total">Your Basket | Total: {{getTotal() | currency:'£'}}</h3>
       </div>
       <div class="panel-body">
         <table class="table"  ng-repeat="item in basket track by $index">
@@ -25,10 +28,12 @@
           </tr>
         <table>
         <table class="table">
-          <tr>
-            <td ng-repeat="voucher in vouchers">
-              <a href ng-click="applyVoucher(voucher)" class="btn btn-danger btn-sm" role="button">{{voucher.name}}</a>
+          <h4>Apply a voucher: </h4>
+          <tr ng-repeat="voucher in vouchers">
+            <td>
+              <a href ng-click="applyVoucher(voucher)" class="btn btn-danger btn-sm discount-button" role="button">{{voucher.name}}</a>
             </td>
+            <h5>{{voucherMessage}}</h5>
           </tr>
         </table>
       </div>

@@ -10,6 +10,7 @@ describe('shopping app', function() {
     basketList = element.all(by.repeater('item in basket'));
     addButton = element.all(by.className('add-to-basket')).get(0);
     removeButton = element.all(by.className('remove-from-basket')).get(0);
+    fiveButton = element.all(by.className('discount-button')).get(0);
   });
 
   it('has a list of products', function() {
@@ -46,7 +47,8 @@ describe('shopping app', function() {
 
   it('as a user I can apply a voucher to my basket', function() {
     addButton.click();
-    
+    fiveButton.click();
+    expect(element(by.css('.total')).getText()).toEqual('Your Basket | Total: £94.00');
   });
 
 });

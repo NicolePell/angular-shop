@@ -24,6 +24,17 @@
   border-color: gray;
 }
 
+/*=================SHOP PRODUCTS=================*/
 .products {
-  height: 445px;
+  height: 470px;
+}
+
+.thumbnail > img.product-image {
+  height: 220px;
+  width: 240px;
+}
+
+/*=================BASKET=================*/
+.discount-button {
+  width: 420px;
 }

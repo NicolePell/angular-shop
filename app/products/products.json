@@ -15,7 +15,7 @@
     "category": "Women's Footwear",
     "price": 42.00,
     "quantity": 4,
-    "imageUrl": "images/womens_footwear.jpg"
+    "imageUrl": "images/blue_suede.jpg"
   },
   {
     "name": "Leather Driver Saddle Loafers",
@@ -24,7 +24,7 @@
     "category": "Men's Footwear",
     "price": 34.00,
     "quantity": 12,
-    "imageUrl": "images/womens_footwear.jpg"
+    "imageUrl": "images/leather_loafers.jpg"
   },
   {
     "name": "Flip Flops",
@@ -33,7 +33,7 @@
     "category": "Men's Footwear",
     "price": 19.00,
     "quantity": 6,
-    "imageUrl": "images/womens_footwear.jpg"
+    "imageUrl": "images/red_flip_flops.png"
   },
   {
     "name": "Flip Flops",
@@ -42,7 +42,7 @@
     "category": "Men's Footwear",
     "price": 19.00,
     "quantity": 0,
-    "imageUrl": "images/womens_footwear.jpg"
+    "imageUrl": "images/blue_flip_flops.jpg"
   },
   {
     "name": "Gold Button Cardigan",
@@ -51,7 +51,7 @@
     "category": "Women's Casualwear",
     "price": 167.00,
     "quantity": 6,
-    "imageUrl": "images/womens_footwear.jpg"
+    "imageUrl": "images/cardigan.jpeg"
   },
   {
     "name": "Cotton Shorts",
@@ -60,7 +60,7 @@
     "category": "Women's Casualwear",
     "price": 30.00,
     "quantity": 5,
-    "imageUrl": "images/womens_footwear.jpg"
+    "imageUrl": "images/red_cotton_shorts.jpg"
   },
   {
     "name": "Fine Stripe Short Sleeve Shirt",
@@ -69,7 +69,7 @@
     "category": "Men's Casualwear",
     "price": 49.99,
     "quantity": 9,
-    "imageUrl": "images/womens_footwear.jpg"
+    "imageUrl": "images/grey_shirt.jpg"
   },
   {
     "name": "Fine Stripe Short Sleeve Shirt",
@@ -78,7 +78,7 @@
     "category": "Men's Casualwear",
     "price": 49.99,
     "quantity": 3,
-    "imageUrl": "images/womens_footwear.jpg"
+    "imageUrl": "images/green_shirt.jpg"
   },
   {
     "name": "Sharkskin Waistcoat",
@@ -87,7 +87,7 @@
     "category": "Men's Formalwear",
     "price": 75.00,
     "quantity": 2,
-    "imageUrl": "images/womens_footwear.jpg"
+    "imageUrl": "images/waistcoat.jpg"
   },
   {
     "name": "Lightweight Patch Pocket Blazer",
@@ -96,7 +96,7 @@
     "category": "Men's Formalwear",
     "price": 175.50,
     "quantity": 1,
-    "imageUrl": "images/womens_footwear.jpg"
+    "imageUrl": "images/blazer.jpg"
   },
   {
     "name": "Bird Print Dress",
@@ -105,7 +105,7 @@
     "category": "Women's Formalwear",
     "price": 270.00,
     "quantity": 10,
-    "imageUrl": "images/womens_footwear.jpg"
+    "imageUrl": "images/bird_print_dress.jpeg"
   },
   {
     "name": "Mid Twist Cut-Out Dress",
@@ -114,6 +114,6 @@
     "category": "Women's Formalwear",
     "price": 540.00,
     "quantity": 5,
-    "imageUrl": "images/womens_footwear.jpg"
+    "imageUrl": "images/pink_dress.jpg"
   }
 ]

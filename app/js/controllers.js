@@ -11,14 +11,20 @@ function($scope, $http) {
 
     $scope.basket = [];
     $scope.vouchers = [
-      { name: '£5 off', value: 5, spendingRequirement: 0 },
-      { name: '£10 off', value: 10, spendingRequirement: 50 },
-      { name: '£15 off', value: 15, spendingRequirement: 75 }
+      { name: '£5 off your order', value: 5, spendingRequirement: 1 },
+      { name: '£10 off when you spend over £50', value: 10, spendingRequirement: 50 },
+      { name: '£15 off when you spend over £75 and purchase at least one footwear item', value: 15, spendingRequirement: 75 }
     ];
     $scope.totalDiscount = [];
 
     $scope.addItem = function(index) {
-      $scope.basket.push($scope.products[index]);
+      if($scope.products[index].quantity > 0) {
+        var product = $scope.products[index];
+        product.quantity -= 1;
+        $scope.basket.push(product);
+      } else {
+        $scope.stockMessage = "Sorry, this item is out of stock!";
+      };
     };
 
     $scope.getTotal = function() {
@@ -34,6 +40,13 @@ function($scope, $http) {
 
     $scope.removeItem = function(index) {
       $scope.basket.splice(index, 1);
+    };
+
+    $scope.outOfStock = function(item) {
+      if(item.quantity === 0) {
+        return true;
+      }
+      return false;
     };
 
     $scope.applyVoucher = function(voucher) {
