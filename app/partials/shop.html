@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-sm-8">
+  <div class="col-sm-8 products">
     <div class="col-sm-6 col-md-4 products" ng-repeat="product in products | filter:search">
       <div class="thumbnail">
         <img src="{{product.imageUrl}}">
@@ -12,10 +12,10 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-4">
+  <div class="col-sm-4 basket">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">Your Basket Total: {{ getTotal() | currency:'£' }}</h3>
+        <h3 class="panel-title total">Your Basket | Total: {{ getTotal() | currency:'£' }}</h3>
       </div>
       <div class="panel-body" ng-repeat="item in basket track by $index">
         <table class="table">
