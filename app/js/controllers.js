@@ -23,4 +23,8 @@ function($scope, $http) {
       });
       return total;
     };
+
+    $scope.removeItem = function(index) {
+      $scope.basket.splice(index, 1);
+    };
 }]);

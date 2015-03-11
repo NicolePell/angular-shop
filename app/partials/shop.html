@@ -19,7 +19,10 @@
       </div>
       <div class="panel-body" ng-repeat="item in basket track by $index">
         <table class="table">
-          <tr>{{item.name}} : {{item.price | currency:'£'}}</tr>
+          <tr>
+            <td>{{item.name}} : {{item.price | currency:'£'}}</td>
+            <td><a href ng-click="removeItem($index)" class="btn btn-danger btn-sm remove-from-basket" role="button">Remove</a></td>
+          </tr>
         <table>
       </div>
     </div>
