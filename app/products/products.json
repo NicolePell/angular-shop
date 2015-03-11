@@ -19,7 +19,7 @@
   },
   {
     "name": "Leather Driver Saddle Loafers",
-    "id": "leather-loafers",
+    "id": "2",
     "description": "Tan",
     "category": "Men's Footwear",
     "price": 34.00,
@@ -28,7 +28,7 @@
   },
   {
     "name": "Flip Flops",
-    "id": "red-flip-flops",
+    "id": "3",
     "description": "Red",
     "category": "Men's Footwear",
     "price": 19.00,
@@ -37,7 +37,7 @@
   },
   {
     "name": "Flip Flops",
-    "id": "blue-flip-flops",
+    "id": "4",
     "description": "Blue",
     "category": "Men's Footwear",
     "price": 19.00,
@@ -46,7 +46,7 @@
   },
   {
     "name": "Gold Button Cardigan",
-    "id": "gold-cardigan",
+    "id": "5",
     "description": "Black",
     "category": "Women's Casualwear",
     "price": 167.00,
@@ -55,7 +55,7 @@
   },
   {
     "name": "Cotton Shorts",
-    "id": "cotton-shorts",
+    "id": "6",
     "description": "Medium Red",
     "category": "Women's Casualwear",
     "price": 30.00,
@@ -64,7 +64,7 @@
   },
   {
     "name": "Fine Stripe Short Sleeve Shirt",
-    "id": "fine-stripe-shirt-grey",
+    "id": "7",
     "description": "Grey",
     "category": "Men's Casualwear",
     "price": 49.99,
@@ -73,7 +73,7 @@
   },
   {
     "name": "Fine Stripe Short Sleeve Shirt",
-    "id": "fine-stripe-shirt-green",
+    "id": "8",
     "description": "Green",
     "category": "Men's Casualwear",
     "price": 49.99,
@@ -82,7 +82,7 @@
   },
   {
     "name": "Sharkskin Waistcoat",
-    "id": "sharkskin-waistcoat",
+    "id": "9",
     "description": "Charcoal",
     "category": "Men's Formalwear",
     "price": 75.00,
@@ -91,7 +91,7 @@
   },
   {
     "name": "Lightweight Patch Pocket Blazer",
-    "id": "lightweight-blazer",
+    "id": "10",
     "description": "Deer",
     "category": "Men's Formalwear",
     "price": 175.50,
@@ -100,7 +100,7 @@
   },
   {
     "name": "Bird Print Dress",
-    "id": "bird-print-dress",
+    "id": "11",
     "description": "Black",
     "category": "Women's Formalwear",
     "price": 270.00,
@@ -109,7 +109,7 @@
   },
   {
     "name": "Mid Twist Cut-Out Dress",
-    "id": "mid-twist-dress",
+    "id": "12",
     "description": "Pink",
     "category": "Women's Formalwear",
     "price": 540.00,
