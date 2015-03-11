@@ -7,7 +7,7 @@
           <h4>{{product.name}}</h4>
           <p>{{product.description}}</p>
           <p><strong>{{product.price | currency:'£'}}</strong></p>
-          <p><a href class="btn btn-primary add-to-basket" role="button">Add to Basket</a>
+          <p><a href ng-click="addItem($index)" class="btn btn-primary add-to-basket" role="button">Add to Basket</a>
         </div>
       </div>
     </div>
@@ -17,9 +17,11 @@
       <div class="panel-heading">
         <h3 class="panel-title">Your Basket</h3>
       </div>
-      <div class="panel-body">
-        <table class="table"></table>
+      <div class="panel-body" ng-repeat="item in basket track by $index">
+        {{item.name}} : {{item.price | currency:'£'}}
       </div>
     </div>
   </div>
 </div>
+
+<!-- cloth in sharedCart track by $index -->
