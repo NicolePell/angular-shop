@@ -34,5 +34,13 @@ describe('shoppingControllers', function() {
       scope.addItem(0);
       expect(scope.basket.length).toBe(1);
     });
+
+    it('a product can be removed from the basket', function() {
+      $httpBackend.flush();
+      scope.addItem(0);
+      expect(scope.basket.length).toBe(1);
+      scope.removeItem(0);
+      expect(scope.basket.length).toBe(0);
+    });
   });
 });
