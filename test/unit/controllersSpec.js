@@ -11,7 +11,7 @@ describe('shoppingControllers', function() {
     beforeEach(inject(function(_$httpBackend_,$rootScope, $controller) {
       $httpBackend = _$httpBackend_;
       $httpBackend.expectGET('products/products.json').
-      respond([{name: 'Almond Toe Shoes'}, {name: 'Suede Shoes'}]);
+      respond([{name: 'Almond Toe Shoes', price: 12}, {name: 'Suede Shoes', price: 9}]);
 
       scope = $rootScope.$new();
       ctrl = $controller('ShopCtrl', {$scope: scope});
@@ -21,8 +21,8 @@ describe('shoppingControllers', function() {
       expect(scope.products).toBeUndefined();
       $httpBackend.flush();
 
-      expect(scope.products).toEqual([{name: 'Almond Toe Shoes'},
-      {name: 'Suede Shoes'}]);
+      expect(scope.products).toEqual([{name: 'Almond Toe Shoes', price: 12},
+      {name: 'Suede Shoes', price: 9}]);
     });
 
     it('has an empty basket', function() {
@@ -41,6 +41,13 @@ describe('shoppingControllers', function() {
       expect(scope.basket.length).toBe(1);
       scope.removeItem(0);
       expect(scope.basket.length).toBe(0);
+    });
+
+    it('calculates the total cost of the basket', function() {
+      $httpBackend.flush();
+      scope.addItem(0);
+      scope.addItem(1);
+      expect(scope.getTotal()).toEqual(21);
     });
   });
 });
