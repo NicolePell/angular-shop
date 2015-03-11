@@ -1,19 +1,29 @@
-describe('ProductListCtrl', function(){
+'use strict';
+
+/* jasmine specs for controllers go here */
+describe('shoppingControllers', function() {
 
   beforeEach(module('shoppingApp'));
 
-  it('create "products" model with 13 phones', inject(function($controller) {
-    var scope = {},
-    ctrl = $controller('ProductListCtrl', {$scope:scope});
+  describe('ShopCtrl', function(){
+    var scope, ctrl, $httpBackend;
 
-    expect(scope.products.length).toBe(13);
-  }));
+    beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
+      $httpBackend = _$httpBackend_;
+      $httpBackend.expectGET('products/products.json').
+      respond([{name: 'Almond Toe Shoes'}, {name: 'Suede Shoes'}]);
 
-  it('knows a products name', inject(function($controller) {
-    var scope = {},
-    ctrl = $controller('ProductListCtrl', {$scope:scope});
+      scope = $rootScope.$new();
+      ctrl = $controller('ShopCtrl', {$scope: scope});
+    }));
 
-    expect(scope.products[0].name).toBe('Almond Toe Court Shoes')
-  }));
 
+    it('creates "products" model with 2 products fetched from xhr', function() {
+      expect(scope.products).toBeUndefined();
+      $httpBackend.flush();
+
+      expect(scope.products).toEqual([{name: 'Almond Toe Shoes'},
+      {name: 'Suede Shoes'}]);
+    });
+  });
 });
