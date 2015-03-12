@@ -5,7 +5,7 @@ A responsive website singe plage web app designed for a clothing retailer. The r
 different categories of clothes: men and women's footwear, men and women's casualwear,
 men and women's formalwear.
 
-![Screenshot of the shop](http://s1338.photobucket.com/user/NicciPell/media/Screen%20Shot%202015-03-12%20at%2009.37.47_zps6ltfqjun.png.html)
+![Screenshot of the shop](http://i1338.photobucket.com/albums/o694/NicciPell/Screen%20Shot%202015-03-12%20at%2009.37.47_zps6ltfqjun.png)
 
 ## Features of the website include:
 - [x] Viewing all products, their category, price and availability.
