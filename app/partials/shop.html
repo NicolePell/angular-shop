@@ -27,16 +27,18 @@
         <table class="table"  ng-repeat="item in basket track by $index">
           <tr>
             <td>{{item.name}} : {{item.price | currency:'£'}}</td>
+            <td ng-model="item.desiredQuantity" ng-init="item.desiredQuantity = 1">{{item.desiredQuantity}}</td>
             <td><a href ng-click="removeItem($index)" class="btn btn-danger btn-sm remove-from-basket" role="button">Remove</a></td>
           </tr>
         <table>
-        <table class="table">
-          <h4>Apply a voucher: </h4>
-          <tr ng-repeat="voucher in vouchers">
+        <table class="table" ng-show="displayDiscount">
+          <h5 ng-show="displayDiscount">Apply a voucher: </h5>
+          <tr>
             <td>
-              <a href ng-click="applyVoucher(voucher)" class="btn btn-danger btn-sm discount-button" role="button">{{voucher.name}}</a>
+              <a href ng-click="applyVoucher(vouchers[0].value)" class="btn btn-danger btn-sm discount-button" role="button">{{vouchers[0].name}}</a>
+              <a href ng-click="applyVoucher(vouchers[1].value)" ng-disabled="displayTen" class="btn btn-danger btn-sm discount-button" role="button">{{vouchers[1].name}}</a>
+              <a href ng-click="applyVoucher(vouchers[2].value)" ng-disabled="displayFifteen" class="btn btn-danger btn-sm discount-button" role="button">{{vouchers[2].name}}</a>
             </td>
-            <h5>{{voucherMessage}}</h5>
           </tr>
         </table>
       </div>
