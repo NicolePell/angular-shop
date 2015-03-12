@@ -5,17 +5,17 @@ A responsive website singe plage web app designed for a clothing retailer. The r
 different categories of clothes: men and women's footwear, men and women's casualwear,
 men and women's formalwear.
 
-[Screenshot of the shop](http://s1338.photobucket.com/user/NicciPell/media/Screen%20Shot%202015-03-12%20at%2009.37.47_zps6ltfqjun.png.html)
+![Screenshot of the shop](http://s1338.photobucket.com/user/NicciPell/media/Screen%20Shot%202015-03-12%20at%2009.37.47_zps6ltfqjun.png.html)
 
 ## Features of the website include:
-[x] Viewing all products, their category, price and availability.
-[x] Adding products to a shopping basket.
-[x] Removing products from the shopping basket.
-[x] Viewing the total price of the items in the shopping basket.
-[x] Vouchers can be applied to the shopping basket.
-[x] The total price is adjusted to include discounts applied.
-[x] Vouchers can only be selected if they are valid.
-[x] It is not possible to add out of stock products to the basket.
+- [x] Viewing all products, their category, price and availability.
+- [x] Adding products to a shopping basket.
+- [x] Removing products from the shopping basket.
+- [x] Viewing the total price of the items in the shopping basket.
+- [x] Vouchers can be applied to the shopping basket.
+- [x] The total price is adjusted to include discounts applied.
+- [x] Vouchers can only be selected if they are valid.
+- [x] It is not possible to add out of stock products to the basket.
 
 ## Technologies
 Testing:
@@ -56,9 +56,9 @@ Unit: npm start and then npm test
 ```
 
 ## Things to improve
-[ ] Discount is removed when basket is no longer valid
-[ ] Alert box to only show when out of stock alert message appears
-[ ] Make sure correct products are being added to basket when search filter is on
-[ ] Refactor and move products and basket to service
-[ ] Ensure all elements of the website are responsive
-[ ] Upload images to Amazon Web Services
+- [ ] Discount is removed when basket is no longer valid
+- [ ] Alert box to only show when out of stock alert message appears
+- [ ] Make sure correct products are being added to basket when search filter is on
+- [ ] Refactor and move products and basket to service
+- [ ] Ensure all elements of the website are responsive
+- [ ] Upload images to Amazon Web Services
