@@ -27,6 +27,7 @@ function($scope, $http) {
 
         if($scope.inBasket(product)) {
           product.desiredQuantity += 1;
+          product.quantity -= 1;
         } else {
           product.quantity -= 1;
           $scope.basket.push(product);

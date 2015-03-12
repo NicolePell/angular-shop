@@ -46,13 +46,14 @@ describe('shoppingControllers', function() {
       $httpBackend.flush();
       scope.addItem(0);
       scope.addItem(1);
-      expect(scope.getTotal()).toEqual(21);
+      expect(scope.getTotal()).toBe(21);
     });
 
     it('updates the price when a discount is applied', function() {
       $httpBackend.flush();
+      scope.addItem(0);
       scope.applyVoucher(5);
-      scope(scope.getTotal()).toEqual(16);
+      expect(scope.getTotal()).toEqual(16);
     });
   });
 });
