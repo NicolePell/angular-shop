@@ -11,7 +11,7 @@ describe('shoppingControllers', function() {
     beforeEach(inject(function(_$httpBackend_,$rootScope, $controller) {
       $httpBackend = _$httpBackend_;
       $httpBackend.expectGET('products/products.json').
-        respond([{name: 'Almond Toe Shoes', price: 12}, {name: 'Suede Shoes', price: 9}]);
+        respond([{name: 'Almond Toe Shoes', price: 12, quantity: 1}, {name: 'Suede Shoes', price: 9, quantity: 1}]);
 
       scope = $rootScope.$new();
       ctrl = $controller('ShopCtrl', {$scope: scope});
@@ -20,8 +20,8 @@ describe('shoppingControllers', function() {
     it('creates "products" model with 2 products fetched from xhr', function() {
       expect(scope.products).toBeUndefined();
       $httpBackend.flush();
-      expect(scope.products).toEqual([{name: 'Almond Toe Shoes', price: 12},
-      {name: 'Suede Shoes', price: 9}]);
+      expect(scope.products).toEqual([{name: 'Almond Toe Shoes', price: 12, quantity: 1},
+      {name: 'Suede Shoes', price: 9, quantity: 1}]);
     });
 
     it('has an empty basket', function() {
