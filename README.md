@@ -1,7 +1,7 @@
 Angular Shop
 ============
 
-A responsive website singe plage web app designed for a clothing retailer. The retailer sells six
+A responsive website singe page web app designed for a clothing retailer. The retailer sells six
 different categories of clothes: men and women's footwear, men and women's casualwear,
 men and women's formalwear.
 
