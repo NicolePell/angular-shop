@@ -16,9 +16,9 @@ function($scope, $http) {
       { name: '£15 off when you spend over £75 and purchase at least one footwear item', value: 15, spendingRequirement: 75 }
     ];
     $scope.totalDiscount = [];
-    $scope.displayDiscount = false;
-    $scope.displayTen = true;
-    $scope.displayFifteen = true;
+    $scope.displayFiveOff = false;
+    $scope.displayTenOff = true;
+    $scope.displayFifteenOff = true;
 
     $scope.addItem = function(index) {
       var product = $scope.products[index];
@@ -37,13 +37,16 @@ function($scope, $http) {
       };
     };
 
-    $scope.inBasket = function (item) {
-      for (var i = 0; i < $scope.basket.length; i++) {
-        if ($scope.basket[i] === item) {
-          return true;
-        };
-      };
-      return false;
+    // $scope.outOfStock = function(index) {
+    //   var product = $scope.products[index];
+    //
+    //   "Sorry, this item is out of stock" if(product.quantity <= 0)
+    // }
+
+    $scope.inBasket = function(item) {
+      angular.forEach($scope.basket, function(item) {
+        item === item
+      });
     };
 
     $scope.getTotal = function() {
@@ -54,22 +57,23 @@ function($scope, $http) {
       });
 
       if(total > 0) {
-        $scope.displayDiscount = true;
+        $scope.displayFiveOff = true;
       } else {
-        $scope.displayDiscount = false;
+        $scope.displayFiveOff = false;
       }
 
       if(total >= 50) {
-        $scope.displayTen = false;
+        $scope.displayTenOff = false;
       } else {
-        $scope.displayTen = true;
+        $scope.displayTenOff = true;
       }
 
       if(total >= 75 && $scope.checkClothingRequirement()) {
-        $scope.displayFifteen = false;
+        $scope.displayFifteenOff = false;
       } else {
-        $scope.displayFifteen = true;
+        $scope.displayFifteenOff = true;
       }
+
       angular.forEach($scope.totalDiscount, function(voucher) {
         total -= voucher;
       })
@@ -82,10 +86,7 @@ function($scope, $http) {
     };
 
     $scope.outOfStock = function(item) {
-      if(item.quantity === 0) {
-        return true;
-      }
-      return false;
+      return item.quantity === 0
     };
 
     $scope.applyVoucher = function(voucher){
@@ -94,16 +95,16 @@ function($scope, $http) {
     };
 
     $scope.checkClothingRequirement = function() {
-      var verifier = false;
+      // var verifier = false;
 
-      angular.forEach($scope.basket, function(item) {
-        var category = item.category.split(' ').pop();
+      var category = angular.forEach($scope.basket, function(item) {
+        item.category.split(' ').pop();
 
-        if(category === 'Footwear') {
-          verifier = true;
-        }
+        return category === 'Footwear'
+        //   verifier = true;
+        // }
       });
 
-      return verifier;
+      // return verifier;
     };
 }]);

@@ -38,7 +38,6 @@ describe('shoppingControllers', function() {
     it('a product can be removed from the basket', function() {
       $httpBackend.flush();
       scope.addItem(0);
-      expect(scope.basket.length).toBe(1);
       scope.removeItem(0);
       expect(scope.basket.length).toBe(0);
     });
@@ -55,6 +54,9 @@ describe('shoppingControllers', function() {
       scope.addItem(0);
       scope.applyVoucher(5);
       expect(scope.getTotal()).toEqual(7);
+    });
+
+    it('', function() {
     });
   });
 });
